@@ -110,8 +110,12 @@ select {
     width: 85%;
   }
 
-  form {
+  form,
+  section {
     display: flex;
+  }
+
+  form {
     justify-content: space-between;
   }
 
@@ -137,7 +141,6 @@ select {
   }
 
   section {
-    display: flex;
     padding: 0;
   }
 
