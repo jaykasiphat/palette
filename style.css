@@ -1,3 +1,6 @@
+/*==================
+  BASE
+===================*/
 * {
   box-sizing: border-box;
 }
@@ -6,4 +9,107 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+input,
+select,
+button,
+.color-container {
+  cursor: pointer;
+}
+
+/*==================
+  LAYOUT
+===================*/
+body,
+section {
+  display: flex;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #eeebfe;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 1em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.wrapper,
+select,
+button {
+  background: #fff;
+}
+
+form {
+  padding: 2em;
+}
+
+input,
+select,
+button,
+.color {
+  width: 100%;
+}
+
+input {
+  height: 3em;
+}
+
+select,
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+input,
+select {
+  margin-bottom: 1em;
+}
+
+.color-container {
+  flex-grow: 1;
+}
+
+.color {
+  height: 50vh;
+}
+
+/*==================
+  MQ
+===================*/
+@media screen and (min-width: 680px) {
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input,
+  select {
+    margin-bottom: 0;
+  }
+
+  input,
+  select,
+  button {
+    width: auto;
+  }
+
+  input,
+  button {
+    flex-grow: 1;
+  }
+
+  select {
+    flex-grow: 2;
+    margin: 0 1em;
+  }
 }
